@@ -1,0 +1,48 @@
+@import "styles/global";
+
+.audioplayer {
+    width: 100%;
+    height: 44%;
+    margin: 3% 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.audioplayer__left {
+    width: 100%;
+}
+
+.audioplayer__right {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.audioplayer__right--title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    color: $white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    @media(max-width: 720px) {
+        font-size: 1.4rem;
+    }
+}
+
+.audioplayer__right--artist {
+    color: $white;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    @media(max-width: 720px) {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,53 @@
+@import "styles/global";
+
+.album-info {
+    margin-top: 40px;
+    width: 70%;
+
+    p {
+        margin: 5px;
+        text-align: center;
+    }
+}
+
+.album-info__container {
+    width: 100%;
+    overflow: hidden;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $white
+}
+
+.album-info__container-marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 12s linear infinite;
+    padding-left: 70%;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.album-info__text {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: rgba($white, 0.8);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: --webkit-box;
+    -webkit-line-clamp: 2;
+}
+
+.album-info__release {
+    margin-top: 15px;
+    font-size: 0.7rem;
+    font-weight: lighter;
+    color: rgba($white, 0.8);
+}

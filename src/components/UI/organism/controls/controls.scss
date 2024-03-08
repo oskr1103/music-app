@@ -1,0 +1,43 @@
+@import "styles/global";
+
+.controls {
+    width: 300px;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    @media(max-width: 720px) {
+        width: 220px;
+        padding-bottom: 10px;
+    }
+}
+
+.action-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+}
+
+.play-pause-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $green-200;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

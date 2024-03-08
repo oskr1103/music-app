@@ -1,0 +1,36 @@
+@import "styles/global";
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    height: 50px;
+    width: 150px;
+    color: rgba($white, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 5px auto;
+    transition: all 0.3s ease-out;
+    padding-left: 10px;
+    border-left: solid 1px transparent;
+}
+
+.btn.active {
+    color: $white;
+    border-left: solid 1px $green-400;
+
+}
+
+.btn:hover {
+    color: $white;
+}
+
+.btn__title {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 15px;
+}

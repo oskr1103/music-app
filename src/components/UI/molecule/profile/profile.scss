@@ -1,0 +1,29 @@
+@import "styles/global";
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 1px;
+
+    @media(max-width: 720px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.profile__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $white;
+}
+
+.profile__name {
+    text-align: center;
+    color: $white;
+    font-size: 0.7rem;
+    margin-left: 10px;
+}

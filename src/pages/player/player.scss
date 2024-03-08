@@ -1,0 +1,33 @@
+@import "styles/global";
+
+.player__top-body {
+    display: flex;
+    width: 100%;
+    margin-right: 2%;
+    height: auto;
+    gap: 20px;
+
+    @media(max-width: 340px) {
+        flex-direction: column;
+        width: 280px;
+    }
+
+    @media(max-width: 920px) {
+        flex-direction: column;
+    }
+}
+
+.player__bottom-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba($black-200, 0.5);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+}
